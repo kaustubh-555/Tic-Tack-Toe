@@ -6,7 +6,7 @@ body{
     padding: 50px;
 }
 #maincontainer{
-    width: 70vw;
+    width: fit-content;
     margin: auto;
     background-color:#00425A;
     color:white;
@@ -20,7 +20,7 @@ body{
 }
 .game{
     display:grid;
-    width: 50%;
+    width: fit-content;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     color:black;
@@ -28,8 +28,8 @@ body{
 .box{
     background-color: aliceblue;
     border: solid black;
-    height:200px;
-    width: 200px;
+    height:25vh;
+    width: 25vh; 
     font-size: 10rem;
     text-align: center;
 }
@@ -63,7 +63,6 @@ input{
     border-radius: 5px;
     height: 1.5rem;
     font-size: 1.5rem;
-    /* padding: 5px; */
     background-color: darkgray;
     padding-inline: 10px;
 }

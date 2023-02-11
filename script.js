@@ -91,6 +91,9 @@ function displayWinner(name) {
     msg.style.padding = "30px";
     msg.style.width = "80%";
     msg.style.margin = "auto";
+    for (let i=0;i<9;i++){
+        box[i].removeEventListener('click',move);
+    }
 }
 function reset() {
     let temp = document.getElementById("message");
@@ -104,6 +107,9 @@ function reset() {
     marka = [];
     markb = [];
     turn = "X";
+    for (let i = 0; i < 9; i += 1) {
+        box[i].addEventListener('click', move);
+    }
 }
 document.getElementById("start").addEventListener('click', start);
 function start(e) {
@@ -112,6 +118,5 @@ function start(e) {
     p1 = player1.value;
     const player2 = document.getElementById("player2");
     p2 = player2.value;
-    // document.getElementById("#btn").style.display="block";
     e.preventDefault();
 }
